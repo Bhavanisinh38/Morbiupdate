@@ -1,0 +1,121 @@
+/* --- Contact Forms Design --- */
+.contact-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-row .cr-item{
+    flex: 0 0 50%;
+    padding: 15px;
+}
+
+.support-social,
+.support-form{
+    padding: 25px 20px 20px 20px;
+    background: #fdfdfd;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    box-shadow: 0px 7px 10px #f7f7f7;
+    display: block;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.contact-row .cr-item .common-store-links{
+    max-width: 450px;
+    width: 100%;
+}
+
+.contact-row .cr-item .common-store-links .csl-lable{
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.support-social{
+    padding: 0;
+}
+
+.support-social .ss-item{
+    display: block;
+    position: relative;
+    padding: 16px 10px 16px 50px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #425869;
+    border-bottom: 1px solid #eee;
+    line-height: 1.5;
+    transition: all 0.3s ease-in-out;
+}
+
+.support-social .ss-item:hover{
+    background-color: rgba(66, 88, 105, 0.03);
+}
+
+.support-social .ss-item .ss-icon{
+    position: absolute;
+    left: 14px;
+    top: 15px;
+    font-size: 20px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.support-social .ss-item.mail-ss .ss-icon{
+    color: #d32e2a;
+}
+
+.support-social .ss-item.call-ss .ss-icon{
+    color: #25d366;
+    font-size: 22px;
+}
+
+.support-social .ss-item.wh-ss .ss-icon{
+    color: #44be53;
+    font-size: 22px;
+}
+
+.support-social .ss-item.fb-ss .ss-icon{
+    color: #475993;
+}
+
+.support-social .ss-item.insta-ss .ss-icon{
+    color: #cc2366;
+    /* background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); */
+}
+
+.support-social .ss-item.tw-ss .ss-icon{
+    color: #55acee;
+}
+
+.support-social .ss-item.yt-ss .ss-icon{
+    color: red;
+}
+
+.support-social .ss-item.cm-ss .ss-icon{
+    font-size: 23px;
+}
+
+@media screen and (max-width:768px) {
+    .contact-row{
+        flex-direction: column;
+    }
+
+    .contact-row .cr-item{
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .contact-row .cr-item .common-store-links,
+    .contact-row .cr-item .support-social,
+    .contact-row .cr-item .support-form{
+        margin: auto;
+        max-width: 576px;
+    }
+}

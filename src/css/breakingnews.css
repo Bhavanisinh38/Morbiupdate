@@ -1,0 +1,70 @@
+
+/* --- breking News css --- */
+.breking-tag{
+    position: absolute;
+    background: #045191;
+    height: 100%;
+    z-index: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 4px 10px 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.breking-tag:after{
+    content: "";
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    width: 20px;
+    height: 60px;
+    background: #045191;
+    transform: rotate(16deg);
+    z-index: -1;
+}
+
+
+.brealink-outer{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #f7f7f7;
+}
+
+.brealink-slider-bx {
+    white-space: nowrap;
+}
+
+.brealink-slider-bx div {
+    font-weight: 500;
+    font-size: 14px;
+    color: #525252;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-right: 13px;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 0px 7px 14px;
+    position: relative;
+}
+
+.brealink-slider-bx div::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #e31e24;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+.brealink-slider-bx div:hover {
+    color: #d8361e;
+}

@@ -1,0 +1,25 @@
+{
+  "short_name": "Morbiupdate",
+  "name": "Morbiupdate",
+  "icons": [
+    {
+      "src": "mu-text-bg.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "mu-text-bg.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "mu-text-bg.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
