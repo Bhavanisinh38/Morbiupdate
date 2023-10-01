@@ -18,7 +18,7 @@
 .newscatbox-outer .newscatmainbox .newscatbox{
     border-radius: 15px;
     padding: 15px 15px 20px 15px;
-    flex: 0 1 auto;
+    flex: 1 1 auto;
 }
 
 .newscatbox-outer .newscatmainbox .newscatbox .newscatbox-lable{
@@ -122,6 +122,10 @@
 
 }
 
+.cat-main-news .cmn-item-text{
+    flex: auto;
+}
+
 .cat-main-news .cmn-item-text .cmn-item-text-hed{
     font-size: 20px;
     color: black;
@@ -175,6 +179,10 @@
     left: 0px;
     top: 0;
     transition: all 1s ease-in-out;
+}
+
+.cat-news-list .cnl-item .cnl-item-text{
+    flex: auto;
 }
 
 .cat-news-list .cnl-item .cnl-item-text .cnl-item-text-hed{

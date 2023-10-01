@@ -192,6 +192,114 @@ body{
     text-align: center;
 }
 
+/* --- Skeletant Design Css --- */
+.loader-bx {
+    background: #f1f1f1;
+    height: 100%;
+    border-radius: 15px;
+}
+
+
+.newscatmainbox.skeletonmainbox .newscatbox{
+    background-color: #fcfcfc !important
+}
+
+.cat-news-list.skeletonmainbox{
+    margin-top: 0 !important;
+}
+
+.skeletonmainbox .detail-news-ivio-bx,
+.skeletonmainbox .cnl-item-img,
+.skeletonmainbox .cmn-img{
+    box-shadow: none !important;
+}
+
+.detail-news-ivio-bx,
+.featured-item-link,
+.cmn-img,
+.cnl-item-img,
+.loader-design {
+    background-color: #f1f1f1;
+    background-image: url("../img/logo/mu-text-gray.png"),  linear-gradient(90deg, #f1f1f1 40%, rgb(249 249 249) 50%, #f1f1f1 60%);
+    background-position:center , left;
+    background-repeat:no-repeat, repeat;
+    background-size:40%, 1200px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    animation: shine-lines 0.5s infinite linear;
+}
+
+
+
+.loader-design.ld5,
+.loader-design.ld4,
+.loader-design.ld3,
+.loader-design.ld2,
+.loader-design.ld1{
+    width: 100%;
+    border-radius: 50px;
+    background-size:0%, 1200px;
+}
+
+.loader-design.ld1{
+    height: 18px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.loader-design.ld2{
+    width: 100px;
+    height: 20px;
+}
+
+.loader-design.ld3 {
+    height: 16px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.loader-design.ld4{
+    width: 100px;
+    height: 12px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.loader-design.ld5{
+    max-width: 450px;
+    width: 100%;
+    margin: auto;
+    height: 14px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.loader-design.ld-no-img{
+    background-size:0, 1200px;
+}
+
+
+
+@-webkit-keyframes shine-lines {
+    0% {
+        background-position: center, -100px;
+    }
+
+    100% {
+        background-position: center, 1100px;
+    }
+}
+
+@keyframes shine-lines {
+    0% {
+        background-position: center, -100px;
+    }
+
+    100% {
+        background-position: center, 1100px;
+    }
+}
+
 
 /* --- Custom Container -- */
 .custom-container{

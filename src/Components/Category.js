@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types'
 
 // Images Common File
 import Img from '../Components/Img';
@@ -14,14 +15,14 @@ import Socialicon from '../Components/Socialicon';
 import Storelink from '../Components/Storelink'
 
 
-function Category() {
+function Category(props) {
     return (
         <>       
             <div className='breadcrumb-outer'>
                 <div className='custom-container'>
                     <div className='breadcrumb-bx'>
                         <Link className='breadcrumb-link breadcrumb-back' to="/">હોમ<i className="fa fa-angle-right" aria-hidden="true"></i></Link>
-                        <Link className='breadcrumb-link breadcrumb-active' to="/">વિશેષ સમાચાર</Link>
+                        <Link className='breadcrumb-link breadcrumb-active' to="/">{props.pagetitle}</Link>
                     </div>
                 </div>
             </div>
@@ -347,6 +348,77 @@ function Category() {
                             </div>
 
                         </div>
+
+                        <div className='cat-news-list skeletonmainbox'>
+                            
+                            <div className="cnl-item">
+                                <div className="cnl-item-img"></div>
+                                <div className="cnl-item-text">
+                                    <div className="cnl-item-text-hed">
+                                        <div className="loader-design ld3"></div>
+                                        <div className="loader-design ld3"></div>
+                                        <div className="loader-design ld3"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="cnl-item">
+                                <div className="cnl-item-img"></div>
+                                <div className="cnl-item-text">
+                                    <div className="cnl-item-text-hed">
+                                        <div className="loader-design ld3"></div>
+                                        <div className="loader-design ld3"></div>
+                                        <div className="loader-design ld3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div className="cnl-item">
+                                <div className="cnl-item-img"></div>
+                                <div className="cnl-item-text">
+                                    <div className="cnl-item-text-hed">
+                                        <div className="loader-design ld3"></div>
+                                        <div className="loader-design ld3"></div>
+                                        <div className="loader-design ld3"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="cnl-item">
+                                <div className="cnl-item-img"></div>
+                                <div className="cnl-item-text">
+                                    <div className="cnl-item-text-hed">
+                                        <div className="loader-design ld3"></div>
+                                        <div className="loader-design ld3"></div>
+                                        <div className="loader-design ld3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div className="cnl-item">
+                                <div className="cnl-item-img"></div>
+                                <div className="cnl-item-text">
+                                    <div className="cnl-item-text-hed">
+                                        <div className="loader-design ld3"></div>
+                                        <div className="loader-design ld3"></div>
+                                        <div className="loader-design ld3"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="cnl-item">
+                                <div className="cnl-item-img"></div>
+                                <div className="cnl-item-text">
+                                    <div className="cnl-item-text-hed">
+                                        <div className="loader-design ld3"></div>
+                                        <div className="loader-design ld3"></div>
+                                        <div className="loader-design ld3"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
                 </section>
 
@@ -357,3 +429,12 @@ function Category() {
 }
 
 export default Category;
+
+
+Category.propTypes = {
+    pagetitle: PropTypes.string.isRequired,
+}
+
+Category.defaultProps = {
+    pagetitle: 'મોરબી',
+}

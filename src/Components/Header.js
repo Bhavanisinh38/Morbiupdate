@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Modal } from 'react-bootstrap';
 
 // Css Link
@@ -23,9 +23,17 @@ function Header() {
   const handleSerachShow = () => setShowSerachModal(true);
 
 
-  // const goBack = () => {
-  //   window.history.back();
-  // };
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  // Function to handle back button click
+  const goBack = () => {
+    navigate(-1); // Go back one step in history
+  };
+
+  // Conditionally render back button if not on home page
+  const renderHome = location.pathname === '/';
+  const renderBack = location.pathname !== '/';
 
   return (
     <>
@@ -49,9 +57,21 @@ function Header() {
                 <span></span>
             </div>
 
-            {/* <div class="back-link-tag" onClick={goBack}>
-              <i class="fa fa-angle-left"></i> Back
-            </div> */}
+            
+            {
+                renderHome && 
+                <div className="menu-icon-bx mib-mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            }
+
+            {
+                renderBack && <div className="back-link-tag" onClick={goBack}>
+                    <i className="fa fa-angle-left"></i> Back
+                </div>
+            }    
 
           </div>
 
@@ -120,11 +140,11 @@ function Header() {
 
     <Modal className="SearchModal" centered show={showSerachModal} onHide={handleSerachClose}>
         <div className="search-bx">
-            <div class="searchbar">
+            <div className="searchbar">
                 <div className="searchbar-icon si-back" onClick={handleSerachClose}><img src={Img.arrowleftback} alt="arrow left back Icon"/></div>
                 <input className="search-input" type="text" placeholder="Search for all your needs" />
                 <div className="searchbar-icon si-mike listening"><img src={Img.mike} alt="Mike Icon"/></div>
-                <Link to="/search" onClick={handleSerachClose}  className="searchbar-icon si-search"><i class="fa fa-search"></i></Link>
+                <Link to="/search" onClick={handleSerachClose}  className="searchbar-icon si-search"><i className="fa fa-search"></i></Link>
             </div>
             <div className="searchsuggestions">
                 <Link className="ss-result-link" onClick={handleSerachClose} to="/detail">

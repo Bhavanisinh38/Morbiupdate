@@ -181,6 +181,64 @@ function Detail() {
                 </div>
             </div>
         </div>
+
+        <div className="newscatbox-outer">
+            <div className='custom-container'>
+                
+                <div className='bnr-da-cat'>
+                    <div className="bnr-da-img">
+                        <img className="desk-img width-fit-content" src={Img.demo_ad_img6} alt="" />
+                        <img className="mobile-img" src={Img.demo_ad_img7} alt="" />
+                    </div>
+                </div>
+
+                <div className='newscatmainbox newsdetailbox skeletonmainbox'>
+                    <div className="detail-news-outer">
+
+                        <div className="detail-news-heading">
+                            <div className="loader-design ld1"></div>
+                            <div className="loader-design ld1"></div>
+                        </div>
+
+                        <div className="meta-social-box">
+                            <div className="meta-author">
+                                <div className="meta-author-img loader-design"></div>
+                                <div className="meta-author-data">
+                                    <div className="loader-design ld4"></div>
+                                    <div className="loader-design ld4"></div>
+                                </div>
+                            </div>
+
+                            <div className="social_share-bx">
+                                <div className="ssb-icon loader-design ld-no-img"></div>
+                                <div className="ssb-icon loader-design ld-no-img"></div>
+                                <div className="ssb-icon loader-design ld-no-img"></div>
+                                <div className="ssb-icon loader-design ld-no-img"></div>
+                                <div className="ssb-icon loader-design ld-no-img"></div>
+                            </div>
+                        </div>
+
+                        <div className='detail-news-ivio-bx'></div>
+                        <div className='ivio-tag'><div className="loader-design ld5"></div></div>
+
+
+                        <div className='detail-news-text-bx'>
+                            <div className="loader-design ld3"></div>
+                            <div className="loader-design ld3"></div>
+                            <div className="loader-design ld3"></div>
+                            <div className="loader-design ld3"></div>
+                            <div className="loader-design ld3"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div className='newssidebx'>
+                        <div className='loader-bx loader-design'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </>
     );
 }

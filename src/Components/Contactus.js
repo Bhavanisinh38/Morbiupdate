@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types'
+
 
 // Css Link
 import '../css/suportform.css'
@@ -7,23 +9,23 @@ import '../css/suportform.css'
 // Design Link
 import Storelink from '../Components/Storelink'
 
-function Contactus() {
+function Contactus(props) {
     return (
         <>       
             <div className='breadcrumb-outer'>
                 <div className='custom-container'>
                     <div className='breadcrumb-bx'>
                         <Link className='breadcrumb-link breadcrumb-back' to="/">હોમ<i className="fa fa-angle-right" aria-hidden="true"></i></Link>
-                        <Link className='breadcrumb-link breadcrumb-active' to="/">Contact us</Link>
+                        <Link className='breadcrumb-link breadcrumb-active' to="/">{props.pagetitle}</Link>
                     </div>
                 </div>
             </div>
 
             <div className='custom-container'>
-                <div className='page-heading'>Contact Us</div>
+                <div className='page-heading'>{props.pagetitle}</div>
                 <div className='contact-row'>
                     <div className='cr-item'>
-                        <from className="support-form">
+                        <form className="support-form">
                             <div className="custom-form__group">
                                 <input type="text" name="name" placeholder=" "/>
                                 <label className="group__label">Name</label>
@@ -42,7 +44,7 @@ function Contactus() {
                             </div>
 
                             <button type="submit" className="support-form-btn" disabled>Submit</button>
-                        </from>
+                        </form>
                     </div>
                     <div className='cr-item'>
                         <div className="support-social">
@@ -66,3 +68,12 @@ function Contactus() {
 }
 
 export default Contactus;
+
+
+Contactus.propTypes = {
+    pagetitle: PropTypes.string.isRequired,
+}
+
+Contactus.defaultProps = {
+    pagetitle: 'Contact us',
+}

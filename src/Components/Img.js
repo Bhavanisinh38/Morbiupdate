@@ -24,6 +24,9 @@ import demo_ad_img3 from '../img/bnr/300x600.jpg';
 import demo_ad_img4 from '../img/bnr/728x90.jpg';
 import demo_ad_img5 from '../img/bnr/970x250.jpg';
 
+import demo_ad_img6 from '../img/bnr/dummy-728x90.png';
+import demo_ad_img7 from '../img/bnr/dummy-920x250.jpg';
+
 
 // News demo Images & Video
 import demo_img1 from '../img/news-img/ni-(1).jpg';
@@ -61,6 +64,9 @@ const Img = {
     demo_ad_img3: demo_ad_img3,
     demo_ad_img4: demo_ad_img4,
     demo_ad_img5: demo_ad_img5,
+
+    demo_ad_img6: demo_ad_img6,
+    demo_ad_img7: demo_ad_img7,
 
     // News demo Images & videos
     demo_img1: demo_img1,

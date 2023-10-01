@@ -5,6 +5,7 @@
     padding: 0px;
     flex: 0 1 auto;
     max-width: 770px;
+    width: 100%;
 }
 
 .detail-news-heading{
@@ -34,6 +35,8 @@
     object-fit: contain;
     object-position: center;
     margin-right: 5px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .meta-author .meta-author-data .meta-data-name {

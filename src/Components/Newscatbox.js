@@ -337,6 +337,104 @@ function Newscatbox() {
                         </div>
                     </section>
 
+                    <Horizontalbanner />
+
+                    <section className='newscatmainbox skeletonmainbox'>
+                        <div className='newssidebx'>     
+                           <div className='loader-bx loader-design'></div>
+                        </div>
+                        <div className="newscatbox">
+                            <div className="newscatbox-lable loader-design ld2"></div>
+                            
+                            <div className='cat-main-news'>
+                                <div className="cmn-img"></div>
+                                <div className="cmn-item-text">
+                                    <div className="cmn-item-text-hed">
+                                        <div className="loader-design ld1"></div>
+                                        <div className="loader-design ld1"></div>
+                                        <div className="loader-design ld1"></div>
+                                    </div>
+                                    <div className="cmn-item-text-sub">
+                                        <div className="loader-design ld3"></div>
+                                        <div className="loader-design ld3"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="cat-news-list">
+                                
+                                <div className="cnl-item">
+                                    <div className="cnl-item-img"></div>
+                                    <div className="cnl-item-text">
+                                        <div className="cnl-item-text-hed">
+                                            <div className="loader-design ld3"></div>
+                                            <div className="loader-design ld3"></div>
+                                            <div className="loader-design ld3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="cnl-item">
+                                    <div className="cnl-item-img"></div>
+                                    <div className="cnl-item-text">
+                                        <div className="cnl-item-text-hed">
+                                            <div className="loader-design ld3"></div>
+                                            <div className="loader-design ld3"></div>
+                                            <div className="loader-design ld3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="cnl-item">
+                                    <div className="cnl-item-img"></div>
+                                    <div className="cnl-item-text">
+                                        <div className="cnl-item-text-hed">
+                                            <div className="loader-design ld3"></div>
+                                            <div className="loader-design ld3"></div>
+                                            <div className="loader-design ld3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="cnl-item">
+                                    <div className="cnl-item-img"></div>
+                                    <div className="cnl-item-text">
+                                        <div className="cnl-item-text-hed">
+                                            <div className="loader-design ld3"></div>
+                                            <div className="loader-design ld3"></div>
+                                            <div className="loader-design ld3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="cnl-item">
+                                    <div className="cnl-item-img"></div>
+                                    <div className="cnl-item-text">
+                                        <div className="cnl-item-text-hed">
+                                            <div className="loader-design ld3"></div>
+                                            <div className="loader-design ld3"></div>
+                                            <div className="loader-design ld3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="cnl-item">
+                                    <div className="cnl-item-img"></div>
+                                    <div className="cnl-item-text">
+                                        <div className="cnl-item-text-hed">
+                                            <div className="loader-design ld3"></div>
+                                            <div className="loader-design ld3"></div>
+                                            <div className="loader-design ld3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+
+                            </div>
+                        </div>
+                    </section>
+
                 </div>
             </div>
         </>

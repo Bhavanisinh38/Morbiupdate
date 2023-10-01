@@ -36,13 +36,13 @@ function Footer() {
 
         {/* Go to top Icon */}
         <div className={`go-top ${isVisible ? 'visible' : ''}`} onClick={scrollToTop}>
-            <i class="fa fa-angle-up" aria-hidden="true"></i>
+            <i className="fa fa-angle-up" aria-hidden="true"></i>
         </div>
 
         {/* Whatsapp chat Icon */}
         <div className="fix-right-waraper">
           <a rel="noreferrer" href="https://api.whatsapp.com/send?phone=+919537676276&amp;text=Hello" target="_blank">
-            <img class="whatapp-icons" src={Img.whatsappicon} alt="whatsapp Icon" />
+            <img className="whatapp-icons" src={Img.whatsappicon} alt="whatsapp Icon" />
           </a>
         </div>
         <Bottombanner />
